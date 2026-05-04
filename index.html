@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>潜友星球 | 潜水交友</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="潜友星球首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M4 15.4c2.2-2.1 4.4-2.1 6.6 0 2.1 2 4.3 2 6.4 0 .9-.8 1.9-1.3 3-1.3" />
+            <path d="M4 9.3c2.2-2.1 4.4-2.1 6.6 0 2.1 2 4.3 2 6.4 0 .9-.8 1.9-1.3 3-1.3" />
+          </svg>
+        </span>
+        潜友星球
+      </a>
+      <nav class="nav-links" aria-label="页面区域">
+        <a href="#matches">潜伴</a>
+        <a href="#trips">活动</a>
+        <a href="#join">加入</a>
+      </nav>
+      <a class="header-action" href="#join">创建档案</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/dive-social-hero.png"
+          alt="两位水肺潜水员在热带珊瑚礁附近打招呼"
+        />
+        <div class="hero-scrim"></div>
+        <div class="hero-content">
+          <p class="eyebrow">为认真潜水，也认真交朋友的人</p>
+          <h1 id="hero-title">找到同频的潜伴，下一潜不再一个人出发</h1>
+          <p class="hero-copy">
+            按证书、气瓶数、海况偏好和目的地匹配潜水搭子。先确认安全习惯，再约船期、岸潜、旅潜和课后练习。
+          </p>
+          <div class="hero-actions" aria-label="快捷操作">
+            <a class="button primary" href="#matches">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m21 21-4.3-4.3" />
+                <circle cx="11" cy="11" r="7" />
+              </svg>
+              浏览潜伴
+            </a>
+            <a class="button secondary" href="#trips">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11Z" />
+                <circle cx="12" cy="10" r="2.4" />
+              </svg>
+              查看活动
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-panel" aria-label="匹配概览">
+        <article>
+          <span>今日在线</span>
+          <strong data-count="128">128</strong>
+          <p>位潜友正在找船期或旅潜搭子</p>
+        </article>
+        <article>
+          <span>安全验证</span>
+          <strong data-count="94">94%</strong>
+          <p>公开证书、保险或紧急联系人</p>
+        </article>
+        <article>
+          <span>热门目的地</span>
+          <strong>绿岛</strong>
+          <p>本周最多人收藏的暖水目的地</p>
+        </article>
+      </section>
+
+      <section class="section explore" id="matches" aria-labelledby="matches-title">
+        <div class="section-heading">
+          <p class="eyebrow">Match Board</p>
+          <h2 id="matches-title">本周推荐潜伴</h2>
+          <p>筛选相近经验、目标水域和社交节奏，先从一场轻松的 fun dive 开始。</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="潜伴筛选">
+          <button class="filter-chip is-active" type="button" data-filter="all">全部</button>
+          <button class="filter-chip" type="button" data-filter="warm">暖水旅潜</button>
+          <button class="filter-chip" type="button" data-filter="shore">岸潜练习</button>
+          <button class="filter-chip" type="button" data-filter="photo">水下摄影</button>
+          <button class="filter-chip" type="button" data-filter="advanced">进阶潜水</button>
+        </div>
+
+        <div class="match-layout">
+          <div class="profile-grid" aria-live="polite">
+            <article class="profile-card" data-tags="warm photo">
+              <div class="profile-top">
+                <div class="avatar avatar-coral" aria-hidden="true">M</div>
+                <button class="icon-button" type="button" aria-label="收藏 Mina">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.8 4.6c-1.8-1.7-4.6-1.6-6.3.2L12 7.4 9.5 4.8C7.8 3 5 2.9 3.2 4.6c-2 1.9-2.1 5-.2 7l9 8.9 9-8.9c1.9-2 1.8-5.1-.2-7Z" />
+                  </svg>
+                </button>
+              </div>
+              <h3>Mina</h3>
+              <p class="meta">AOW · 72 潜 · 台北</p>
+              <p>想找 6 月小琉球暖水旅潜搭子，喜欢慢节奏看微距，也会拍合照。</p>
+              <div class="tag-row">
+                <span>小琉球</span>
+                <span>摄影</span>
+                <span>暖水</span>
+              </div>
+              <button class="message-button" type="button" data-name="Mina">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 12a8 8 0 0 1-8 8H6l-3 2 1.2-4A8 8 0 1 1 21 12Z" />
+                </svg>
+                打个招呼
+              </button>
+            </article>
+
+            <article class="profile-card" data-tags="shore advanced">
+              <div class="profile-top">
+                <div class="avatar avatar-mint" aria-hidden="true">K</div>
+                <button class="icon-button" type="button" aria-label="收藏 Kai">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.8 4.6c-1.8-1.7-4.6-1.6-6.3.2L12 7.4 9.5 4.8C7.8 3 5 2.9 3.2 4.6c-2 1.9-2.1 5-.2 7l9 8.9 9-8.9c1.9-2 1.8-5.1-.2-7Z" />
+                  </svg>
+                </button>
+              </div>
+              <h3>Kai</h3>
+              <p class="meta">Rescue · 146 潜 · 高雄</p>
+              <p>周末固定岸潜，重视 buddy check 和浮力控制，欢迎一起练 DSMB。</p>
+              <div class="tag-row">
+                <span>岸潜</span>
+                <span>救援</span>
+                <span>练习</span>
+              </div>
+              <button class="message-button" type="button" data-name="Kai">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 12a8 8 0 0 1-8 8H6l-3 2 1.2-4A8 8 0 1 1 21 12Z" />
+                </svg>
+                打个招呼
+              </button>
+            </article>
+
+            <article class="profile-card" data-tags="warm advanced">
+              <div class="profile-top">
+                <div class="avatar avatar-sun" aria-hidden="true">Y</div>
+                <button class="icon-button" type="button" aria-label="收藏 Yoyo">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.8 4.6c-1.8-1.7-4.6-1.6-6.3.2L12 7.4 9.5 4.8C7.8 3 5 2.9 3.2 4.6c-2 1.9-2.1 5-.2 7l9 8.9 9-8.9c1.9-2 1.8-5.1-.2-7Z" />
+                  </svg>
+                </button>
+              </div>
+              <h3>Yoyo</h3>
+              <p class="meta">Deep · 88 潜 · 台中</p>
+              <p>偏爱放流和沉船，但会先对齐体能、装备和气耗，安全感拉满再下水。</p>
+              <div class="tag-row">
+                <span>放流</span>
+                <span>沉船</span>
+                <span>进阶</span>
+              </div>
+              <button class="message-button" type="button" data-name="Yoyo">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 12a8 8 0 0 1-8 8H6l-3 2 1.2-4A8 8 0 1 1 21 12Z" />
+                </svg>
+                打个招呼
+              </button>
+            </article>
+
+            <article class="profile-card" data-tags="shore photo">
+              <div class="profile-top">
+                <div class="avatar avatar-blue" aria-hidden="true">N</div>
+                <button class="icon-button" type="button" aria-label="收藏 Noah">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.8 4.6c-1.8-1.7-4.6-1.6-6.3.2L12 7.4 9.5 4.8C7.8 3 5 2.9 3.2 4.6c-2 1.9-2.1 5-.2 7l9 8.9 9-8.9c1.9-2 1.8-5.1-.2-7Z" />
+                  </svg>
+                </button>
+              </div>
+              <h3>Noah</h3>
+              <p class="meta">OW · 31 潜 · 新北</p>
+              <p>找北海岸轻松岸潜伙伴，喜欢记录海蛞蝓，也想认识能聊海况的人。</p>
+              <div class="tag-row">
+                <span>北海岸</span>
+                <span>微距</span>
+                <span>OW</span>
+              </div>
+              <button class="message-button" type="button" data-name="Noah">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 12a8 8 0 0 1-8 8H6l-3 2 1.2-4A8 8 0 1 1 21 12Z" />
+                </svg>
+                打个招呼
+              </button>
+            </article>
+          </div>
+
+          <aside class="match-panel" aria-labelledby="match-panel-title">
+            <p class="eyebrow">Smart Match</p>
+            <h2 id="match-panel-title">匹配偏好</h2>
+            <form class="preference-form">
+              <label>
+                目的地
+                <select id="destination">
+                  <option>小琉球</option>
+                  <option>绿岛</option>
+                  <option>垦丁</option>
+                  <option>北海岸</option>
+                </select>
+              </label>
+              <label>
+                证书等级
+                <select id="level">
+                  <option>OW 起</option>
+                  <option>AOW 起</option>
+                  <option>Rescue 起</option>
+                </select>
+              </label>
+              <label>
+                社交节奏
+                <select id="pace">
+                  <option>先线上聊海况</option>
+                  <option>直接约一潜</option>
+                  <option>多人活动优先</option>
+                </select>
+              </label>
+              <div class="range-field">
+                <span>理想气瓶数</span>
+                <strong id="tankValue">40+</strong>
+                <input id="tankRange" type="range" min="10" max="160" value="40" step="10" />
+              </div>
+              <button class="button primary full" type="submit">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m20 6-11 11-5-5" />
+                </svg>
+                生成推荐
+              </button>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section trips" id="trips" aria-labelledby="trips-title">
+        <div class="section-heading">
+          <p class="eyebrow">Dive Calendar</p>
+          <h2 id="trips-title">即将成团</h2>
+          <p>每场活动都标注人数、难度和节奏，减少尴尬，也减少临场不确定。</p>
+        </div>
+        <div class="trip-list">
+          <article class="trip-card">
+            <div class="date-box">
+              <span>06</span>
+              <strong>08</strong>
+            </div>
+            <div>
+              <h3>小琉球海龟线轻旅潜</h3>
+              <p>4 缺 2 · OW 友好 · 下午船潜</p>
+            </div>
+            <button class="text-button" type="button">查看</button>
+          </article>
+          <article class="trip-card">
+            <div class="date-box accent">
+              <span>06</span>
+              <strong>15</strong>
+            </div>
+            <div>
+              <h3>北海岸浮力与导航练习</h3>
+              <p>6 缺 1 · 岸潜 · 适合想进步的人</p>
+            </div>
+            <button class="text-button" type="button">查看</button>
+          </article>
+          <article class="trip-card">
+            <div class="date-box warm">
+              <span>07</span>
+              <strong>03</strong>
+            </div>
+            <div>
+              <h3>绿岛摄影慢潜周末</h3>
+              <p>5 缺 3 · 微距主题 · AOW 建议</p>
+            </div>
+            <button class="text-button" type="button">查看</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section join" id="join" aria-labelledby="join-title">
+        <div class="join-copy">
+          <p class="eyebrow">Join The Current</p>
+          <h2 id="join-title">用一份清楚的潜水档案，遇见更放心的人</h2>
+          <p>
+            让别人先知道你的证书、经验、喜欢的海况和边界。好关系从透明、尊重和一套完整 buddy check 开始。
+          </p>
+        </div>
+        <form class="join-form" id="joinForm">
+          <label>
+            昵称
+            <input name="name" type="text" placeholder="例如：Sunny" required />
+          </label>
+          <label>
+            所在城市
+            <input name="city" type="text" placeholder="例如：台北" required />
+          </label>
+          <label>
+            证书等级
+            <select name="certification" required>
+              <option value="">请选择</option>
+              <option>OW</option>
+              <option>AOW</option>
+              <option>Rescue</option>
+              <option>DM / Instructor</option>
+            </select>
+          </label>
+          <label>
+            你想找什么样的潜伴
+            <textarea name="bio" rows="4" placeholder="写下目的地、节奏、希望对方重视的安全习惯" required></textarea>
+          </label>
+          <button class="button primary full" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14" />
+              <path d="m13 6 6 6-6 6" />
+            </svg>
+            提交档案
+          </button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>潜友星球 · 安全、尊重、同频出发</p>
+      <a href="#top">回到顶部</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
