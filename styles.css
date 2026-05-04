@@ -75,6 +75,33 @@ svg {
   background: linear-gradient(180deg, rgba(3, 25, 34, 0.76), rgba(3, 25, 34, 0));
 }
 
+.site-header.solid-header {
+  color: var(--deep);
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 10px 28px rgba(7, 56, 74, 0.08);
+  backdrop-filter: blur(16px);
+}
+
+.site-header.solid-header .brand-mark {
+  color: #fff;
+  background: var(--deep);
+  border-color: var(--deep);
+}
+
+.site-header.solid-header .nav-links {
+  color: var(--muted);
+}
+
+.site-header.solid-header .nav-links a:hover {
+  color: var(--deep);
+}
+
+.site-header.solid-header .header-action {
+  color: #fff;
+  background: var(--coral);
+}
+
 .brand,
 .nav-links,
 .header-action,
@@ -252,6 +279,13 @@ svg {
   backdrop-filter: blur(12px);
 }
 
+.button.ghost {
+  color: var(--deep);
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 26px rgba(7, 56, 74, 0.09);
+}
+
 .button.full,
 .message-button {
   width: 100%;
@@ -309,6 +343,10 @@ svg {
   width: min(1120px, 90vw);
   margin: 0 auto;
   padding: 6rem 0 0;
+}
+
+section[id] {
+  scroll-margin-top: 5.5rem;
 }
 
 .section-heading {
@@ -642,6 +680,252 @@ textarea:focus {
   font-weight: 850;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.team-page {
+  background: #fbfdfc;
+}
+
+.team-page-main {
+  padding-top: 5rem;
+}
+
+.team-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 0.78fr);
+  gap: 2rem;
+  align-items: center;
+  width: min(1120px, 90vw);
+  margin: 0 auto;
+  padding: 5rem 0 3rem;
+}
+
+.team-hero h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-size: 4rem;
+  line-height: 1.05;
+}
+
+.team-hero-copy > p:not(.eyebrow) {
+  max-width: 42rem;
+  margin: 1.15rem 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.78;
+}
+
+.team-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.team-hero-media {
+  position: relative;
+  min-height: 32rem;
+  overflow: hidden;
+  background: var(--deep);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.team-hero-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 32rem;
+  object-fit: cover;
+}
+
+.team-snapshot {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 1rem;
+  color: #fff;
+  background: rgba(6, 32, 42, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  backdrop-filter: blur(14px);
+}
+
+.team-snapshot span,
+.member-role,
+.rhythm-list span {
+  color: var(--coral);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.team-snapshot strong {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 1.45rem;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+
+.snapshot-grid p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.35;
+}
+
+.snapshot-grid b {
+  display: block;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.team-values {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding-top: 3rem;
+}
+
+.value-card,
+.member-card,
+.rhythm-list article {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 34px rgba(7, 56, 74, 0.08);
+}
+
+.value-card {
+  padding: 1.1rem;
+}
+
+.value-card svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0.5rem;
+  color: var(--reef);
+  background: #e8f6f4;
+  border-radius: 8px;
+}
+
+.value-card h2 {
+  margin: 1rem 0 0;
+  font-size: 1.2rem;
+}
+
+.value-card p,
+.member-card p,
+.rhythm-list p {
+  color: var(--muted);
+  line-height: 1.68;
+}
+
+.value-card p {
+  margin: 0.55rem 0 0;
+}
+
+.team-directory {
+  padding-top: 5rem;
+  padding-bottom: 5.5rem;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.member-card {
+  display: flex;
+  min-height: 25rem;
+  padding: 1.1rem;
+  flex-direction: column;
+}
+
+.member-portrait {
+  display: grid;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1.15rem;
+  place-items: center;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+.member-card h3 {
+  margin: 0.25rem 0 0;
+  font-size: 1.5rem;
+}
+
+.member-card p:not(.member-role) {
+  margin: 0.85rem 0 0;
+}
+
+.member-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.member-tags span {
+  padding: 0.36rem 0.55rem;
+  color: var(--deep);
+  font-size: 0.82rem;
+  font-weight: 800;
+  background: #f3f7fc;
+  border-radius: 6px;
+}
+
+.team-rhythm {
+  padding: 5rem max(5vw, calc((100vw - 1120px) / 2));
+  background: #e9f5f2;
+}
+
+.team-rhythm-inner {
+  width: 100%;
+}
+
+.team-rhythm h2 {
+  margin: 0;
+  font-size: 2.45rem;
+  line-height: 1.08;
+}
+
+.rhythm-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.rhythm-list article {
+  padding: 1.1rem;
+}
+
+.rhythm-list h3 {
+  margin: 0.55rem 0 0;
+  font-size: 1.2rem;
+}
+
+.rhythm-list p {
+  margin: 0.55rem 0 0;
+}
+
 @media (max-width: 920px) {
   .site-header {
     padding: 0.8rem 4vw;
@@ -674,6 +958,22 @@ textarea:focus {
   .match-panel,
   .join-copy {
     position: static;
+  }
+
+  .team-hero {
+    grid-template-columns: 1fr;
+    padding-top: 3.5rem;
+  }
+
+  .team-hero h1 {
+    max-width: 13ch;
+    font-size: 3rem;
+  }
+
+  .team-values,
+  .member-grid,
+  .rhythm-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -719,5 +1019,29 @@ textarea:focus {
 
   .site-footer {
     flex-direction: column;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+  }
+
+  .team-page-main {
+    padding-top: 4.4rem;
+  }
+
+  .team-hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .team-hero-media,
+  .team-hero-media img {
+    min-height: 24rem;
+  }
+
+  .snapshot-grid,
+  .team-values,
+  .member-grid,
+  .rhythm-list {
+    grid-template-columns: 1fr;
   }
 }
