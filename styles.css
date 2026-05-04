@@ -642,6 +642,149 @@ textarea:focus {
   font-weight: 850;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.nav-links a[aria-current="page"] {
+  color: #fff;
+  font-weight: 850;
+}
+
+.about-hero {
+  min-height: 72vh;
+}
+
+.about-hero-content h1 {
+  max-width: 10ch;
+}
+
+.about-stats {
+  margin-bottom: 1rem;
+}
+
+.company-intro {
+  padding-top: 5rem;
+}
+
+.intro-grid,
+.values-grid,
+.company-story {
+  display: grid;
+  gap: 1rem;
+}
+
+.intro-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.intro-grid article,
+.value-card,
+.timeline article {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 34px rgba(7, 56, 74, 0.08);
+}
+
+.intro-grid article,
+.value-card {
+  padding: 1.2rem;
+}
+
+.intro-grid h3,
+.value-card h3,
+.timeline h3 {
+  margin: 0;
+  color: var(--deep);
+  font-size: 1.2rem;
+}
+
+.intro-grid p,
+.value-card p,
+.story-copy p,
+.timeline p {
+  color: var(--muted);
+  line-height: 1.68;
+}
+
+.intro-grid p,
+.value-card p,
+.timeline p {
+  margin: 0.65rem 0 0;
+}
+
+.values-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.value-icon {
+  display: grid;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-bottom: 1rem;
+  place-items: center;
+  color: #fff;
+  background: var(--reef);
+  border-radius: 8px;
+}
+
+.value-icon.accent {
+  background: var(--coral);
+}
+
+.value-icon.warm {
+  color: var(--ink);
+  background: var(--sun);
+}
+
+.value-icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.company-story {
+  grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1fr);
+  align-items: start;
+  padding-bottom: 6rem;
+}
+
+.story-copy {
+  position: sticky;
+  top: 6rem;
+}
+
+.story-copy p {
+  max-width: 34rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.timeline article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.4rem 1rem;
+  padding: 1rem;
+}
+
+.timeline span {
+  display: grid;
+  grid-row: span 2;
+  width: 3.2rem;
+  height: 3.2rem;
+  place-items: center;
+  color: #fff;
+  font-weight: 900;
+  background: var(--deep);
+  border-radius: 8px;
+}
+
 @media (max-width: 920px) {
   .site-header {
     padding: 0.8rem 4vw;
@@ -667,12 +810,16 @@ textarea:focus {
 
   .quick-panel,
   .match-layout,
-  .join {
+  .join,
+  .intro-grid,
+  .values-grid,
+  .company-story {
     grid-template-columns: 1fr;
   }
 
   .match-panel,
-  .join-copy {
+  .join-copy,
+  .story-copy {
     position: static;
   }
 }
@@ -719,5 +866,17 @@ textarea:focus {
 
   .site-footer {
     flex-direction: column;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+  }
+
+  .timeline article {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline span {
+    grid-row: auto;
   }
 }
